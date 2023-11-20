@@ -1,7 +1,7 @@
 defmodule DayThree do
   @input File.read!("../input_03.txt") |> String.trim()
 
-  # Helpers
+  # Helpers :)
   def split_input do
     @input
     |> String.split("", trim: true)
