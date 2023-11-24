@@ -1,8 +1,8 @@
 # AOC
 Advent of code. \
-Work in progress, starting from 2015 -> .. \
+Work in progress, starting from 2015 -> ..
 
-You can find the link [here](https://adventofcode.com). \
+You can find the link [here](https://adventofcode.com). 
 
 # Structure
 Divided by years, and languages within the year. \ 
