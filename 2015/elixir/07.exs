@@ -91,7 +91,10 @@ defmodule D do
   end
 
   def t2 do
-    parse_input()
+    res = t1() |> Integer.to_string()
+    override_cmd = [[res, "->", "b"]]
+    
+    parse_input() ++ override_cmd
     |> solve()
     |> Map.get("a")
   end  
