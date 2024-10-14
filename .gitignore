@@ -5,3 +5,6 @@
 # Input files
 input_*.txt
 
+# random files
+scuff.exs
+input.txt
