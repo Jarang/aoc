@@ -85,7 +85,6 @@ defmodule D do
 
   def t1 do
     parse_input()
-    |> IO.inspect()
     |> solve()
     |> Map.get("a")
   end
