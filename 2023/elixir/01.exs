@@ -6,13 +6,13 @@ defmodule D do
   def t1 do
     @input
     |> String.split("\n", trim: true)
-    |> Enum.reduce(0, fn line, acc -> 
+    |> Enum.reduce(0, fn line, acc ->
       nums = Regex.scan(@regex_decimals, line)
           |> List.flatten
       [a] = Enum.take(nums, 1)
       [b] = Enum.take(nums, -1)
 
-      val = a <> b 
+      val = a <> b
         |> String.to_integer()
 
       val + acc
@@ -33,7 +33,7 @@ defmodule D do
   def t2 do
     @input
     |> String.split("\n", trim: true)
-    |> Enum.reduce(0, fn line, acc -> 
+    |> Enum.reduce(0, fn line, acc ->
       nums = Regex.scan(@regex_all_numbers, line)
           |> List.flatten
           |> Enum.filter(& &1 != "")
@@ -42,12 +42,12 @@ defmodule D do
       a = a |> str_to_num()
       b = b |> str_to_num()
 
-      val = a <> b 
+      val = a <> b
         |> String.to_integer()
-      
+
       val + acc
     end)
   end
-  
-  
+
+
 end
