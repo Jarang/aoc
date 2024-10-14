@@ -8,3 +8,6 @@ input_*.txt
 # random files
 scuff.exs
 input.txt
+
+# until I fix the mess that is 2023
+2023/elixir/*
